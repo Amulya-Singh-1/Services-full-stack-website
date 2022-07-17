@@ -1,0 +1,101 @@
+*{
+  font-size: 18px;
+  font-family: 'Cookie', cursive;
+}
+ul{
+    list-style-type: none;
+}
+input:focus{
+    border: 1px solid grey;
+    border-radius: 4px;
+    background-color: rgba(0, 255, 255, 0.5);
+    color:black;
+    padding: 1px;
+    margin: 1px;
+}
+h1{
+    color: orange;
+}
+p{
+    color: deepskyblue;
+}
+#logo{
+    font-size: 3.5rem ;
+    font-weight: 600; 
+    color : #fd5c63 ;
+    display: initial ;
+    text-shadow: 2px 3px 4px black;
+    letter-spacing: 1px;
+}
+
+div.contactid{
+    text-align: center;
+}
+
+@media (max-width:600px) {
+    .nav > .nav-btn {
+      display: inline-block;
+      position: absolute;
+      right: 0px;
+      top: 0px;
+    }
+    .nav > .nav-btn > label {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      padding: 13px;
+    }
+    .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+      background-color: rgba(0, 0, 0);
+    }
+    .nav > .nav-btn > label > span {
+      display: block;
+      width: 25px;
+      height: 10px;
+      border-top: 2px solid #eee;
+    }
+    .nav > .nav-links {
+      position: absolute;
+      display: block;
+      width: 100%;
+      background-color: #333;
+      height: 0px;
+      transition: all 0.3s ease-in;
+      overflow-y: hidden;
+      top: 50px;
+      left: 0px;
+    }
+    .nav > .nav-links > a {  
+      display: block;
+      width: 100%;
+    }
+    .nav > #nav-check:not(:checked) ~ .nav-links {
+      height: 0px;
+    }
+    .nav > #nav-check:checked ~ .nav-links {
+      height: calc(100vh - 50px);
+      overflow-y: auto;
+    }
+  }
+
+
+  .container{
+    display: flex;
+    justify-content: center;
+  }
+  .row{
+    flex: 1;
+  }
+  label{
+    color : #fd5c63 ;
+  }
+  input{
+    border: 3px solid gray;
+  }
+  footer{
+    background-color:lightslategray;
+    position:relative;
+    bottom:0;
+    width:100%
+  }
+
