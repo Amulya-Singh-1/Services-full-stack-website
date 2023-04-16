@@ -1,0 +1,201 @@
+*{
+  font-size: 22px;
+  font-family: 'Cookie', cursive;
+}
+ul{
+    list-style-type: none;
+}
+input:focus{
+    border: 1px solid grey;
+    border-radius: 4px;
+    background-color: rgba(0, 255, 255, 0.5);
+    color:black;
+    padding: 1px;
+    margin: 1px;
+}
+h1{
+    color: orange;
+}
+p{
+    color: deepskyblue;
+}
+@media screen and (min-width:993px){
+  nav{
+    height: 50px;
+    width: auto;
+  }
+}
+#logo{
+    font-size: 3.5rem ;
+    font-weight: 600; 
+    color : #fd5c63 ;
+    display: initial ;
+    text-shadow: 2px 3px 4px black;
+    letter-spacing: 1px;
+}
+div.contactid{
+    text-align: center;
+}
+@media (max-width:600px) {
+    .nav > .nav-btn {
+      display: inline-block;
+      position: absolute;
+      right: 0px;
+      top: 0px;
+    }
+    .nav > .nav-btn > label {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      padding: 13px;
+    }
+    .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+      background-color: rgba(0, 0, 0);
+    }
+    .nav > .nav-btn > label > span {
+      display: block;
+      width: 25px;
+      height: 10px;
+      border-top: 2px solid #eee;
+    }
+    .nav > .nav-links {
+      position: absolute;
+      display: block;
+      width: 100%;
+      background-color: #333;
+      height: 0px;
+      transition: all 0.3s ease-in;
+      overflow-y: hidden;
+      top: 50px;
+      left: 0px;
+    }
+    .nav > .nav-links > a {  
+      display: block;
+      width: 100%;
+    }
+    .nav > #nav-check:not(:checked) ~ .nav-links {
+      height: 0px;
+    }
+    .nav > #nav-check:checked ~ .nav-links {
+      height: calc(100vh - 50px);
+      overflow-y: auto;
+    }
+  }
+
+
+  .container{
+    display: flex;
+    justify-content: center;
+  }
+  .row{
+    flex: 1;
+  }
+  label{
+    color : #fd5c63 ;
+  }
+  input{
+    width: 350px ;
+    border: 3px solid gray;
+    border-radius: 10px;
+  }
+  footer{
+    background-color:rgb(0, 0, 0);
+    color: white;
+    position:relative;
+    float: bottom;
+    bottom:0 !important;
+    margin-bottom: 0;
+    height:30px;
+    width:100%
+  }
+  .side-username{
+    height: 50px;
+    float:right !important;
+    top: 0;
+    right: 0;
+    position: relative;
+    border: 5px solid rgb(0, 0, 0);
+    border-radius: 10px;
+  }
+  .side-username button{
+    height: 40px;
+    padding: 10px;
+  }
+
+
+  .services-buttons{
+    padding: 10px;
+    margin: 10px;
+  }
+.loginbody{
+  background: url(loginbg5.jpg) no-repeat;
+  background-size: cover;
+  font-family: Cookie , cursive;
+}
+.registerbody{
+  background: url(aurora.jpg) no-repeat;
+  background-size: cover;
+  font-family: Cookie , cursive;
+}
+/* .homepgbody{
+  background: url(indexbg.jpg) no-repeat;
+  background-attachment: fixed;
+  background-clip: content-box;
+  background-size: cover;
+  font-family: Cookie , cursive;
+  background-color: lightgray;
+}  */
+.consultbody{
+  background: url() no-repeat;
+  background-size: cover;
+  font-family: Cookie , cursive;
+  
+}
+.consultbody label{
+  color: black;
+  text-decoration: bisque;
+  text-shadow:overline;
+  text-transform: capitalize;
+}
+.lnr{
+  background-color: black;
+  color: white;
+  margin: 30px;
+  padding: 10px;
+}
+.servicesbody{
+  background: url() no-repeat;
+  background-attachment: fixed;
+  background-clip: content-box;
+  background-size: cover;
+  font-family: Cookie , cursive;
+}
+/* #contactid{
+  border: 2.5px solid black;
+  background-color: bisque;
+} */
+pre{
+  color: black;
+  font-size: 25px !important;
+  font-family: Cookie, cursive !important;
+}
+h2{
+  color: black;
+}
+.contactlinks{
+  color: black;
+}
+@media screen and (max-width:350px){
+  input{
+    width: 250px;
+  }
+  img{
+    width: 200px;
+    height: 150px;
+  }
+}
+@media screen and (max-width:500px){
+  footer{
+    width:100%;
+  }
+}

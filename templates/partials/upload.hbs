@@ -1,0 +1,40 @@
+<center>
+<div>
+    <form action="/consult" method="post" name="form1">
+    <div class="form-group">
+        {{!-- <label for="d">Your Name :</label> --}}
+        <input type="textarea" id="d" name="fullname" placeholder="Full Name" width="150px" >
+    </div>
+    <br>
+    <div class="form-group">
+        {{!-- <label for="c">Your email :</label> --}}
+        <input type="email" id="c" name="email" placeholder="E-mail" >
+    </div>
+    <br>
+    <div class="form-group">
+        <label for="b">Please Elaborate your problem :</label>
+        <br>
+        <input type="textarea" id="b" name="problem" placeholder="Problem" >
+    </div>
+    <br>
+    <div class="form-group">
+        <label for="pickerid">Choose the type of media you want us to send:</label>
+        <br>
+        <input list="mediazzz" id="pickerid" name="mediatype" placeholder="Media-type" >
+        <datalist id="mediazzz">
+        <option value="Image"> Image </option>
+        <option value="Audio"> Audio</option>
+        <option value="Video"> Video</option>
+        </datalist>
+    </div><br>
+        <div class="form-group">
+            <label for="b">Please choose a file :</label>
+            <br>
+            <input type="file" id="h" name="ah" >
+         </div>
+    <br> <br>
+        <input type="reset" class="btn btn-outline-primary" style="width:200px;" >
+        <input type="submit" class="btn btn-outline-success" style="width:200px;" > 
+</form>
+</div>
+</center>
